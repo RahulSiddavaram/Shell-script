@@ -9,7 +9,7 @@
 # root user id -u --> 0
 # normal user id -u --> not 0
 
-USERID=$(ID -u)
+USERID=$(id -u)
 
 if [ $USERID -ne 0]
 then 
