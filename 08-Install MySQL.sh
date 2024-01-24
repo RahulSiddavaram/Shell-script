@@ -18,4 +18,14 @@ then
 # else    
 #     echo "INFO:: YOU ARE ROOT USER"
 fi
-yum install mysql -y 
+
+# it is our responsibility  again to check whether installation is SUccess or not
+yum install mysql -y s
+
+if [ $? -ne 0 ]
+then 
+    echo "Installation of My SQL is ERROR"
+    exit 1
+else 
+    echo "Installation of My SQL is SuCCCESS"
+fi
