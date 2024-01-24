@@ -9,7 +9,7 @@
 # root user id -u --> 0
 # normal user id -u --> not 0
 
-DATE=$(date +&F:%H:%M:%S)
+DATE=$(date +%F:%H:%M:%S)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
