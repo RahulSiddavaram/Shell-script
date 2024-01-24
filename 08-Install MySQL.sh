@@ -24,7 +24,7 @@ yum install mysqlll -y
 
 if [ $? -ne 0 ]
 then 
-    echo "Installation of My SQL is ERROR"
+    echo "Installation of MySQL is ERROR"
     exit 1
 else 
     echo "Installation of My SQL is SuCCCESS"
