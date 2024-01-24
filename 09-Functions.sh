@@ -10,8 +10,9 @@
 # normal user id -u --> not 0
 
 DATE=$(date +%F:%H:%M:%S)
+LOGSDIR=/home/centos/shellscript-log
 SCRIPT_NAME=$0
-LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
+LOGFILE=$LOGSDIR/$$0-$DATE.log
 
 R="\e[31m"
 G="\e[32m"
