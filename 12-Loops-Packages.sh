@@ -20,17 +20,16 @@ then
 #     echo "INFO:: YOU ARE ROOT USER"
 fi
 
-VALIDATE90{
-    if [ $1 -ne 0];
+VALIDATE(){
+    if [ $1 -ne 0 ];
     then
         echo -e "$R Installing $2 ... FAILURE $N"
         exit 1
     else    
         echo -e "Installing $2 .. $G SUCCESS $N"
     fi
-
-
 }
+
 # all arguments are in $@
 
 for i in $@
